@@ -49,7 +49,7 @@ language = None
 source_suffix = '.rst'
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = 'content/index'
 
 # List of patterns, relative to source directory, that match files and directories to ignore when
 # looking for source files.
@@ -64,7 +64,8 @@ exclude_patterns = [
 # We use 'literal' as default role for markdown compatibility: `foo` behaves like ``foo``.
 # See https://docutils.sourceforge.io/docs/ref/rst/roles.html#standard-roles for other roles.
 default_role = 'literal'
-
+html_static_path = ['content/static']
+templates_path = ['content/_templates']
 
 # Whether scaled down images should be be wrapped in a `<a/>` tag linking to the image file or not.
 html_scaled_image_link = False
